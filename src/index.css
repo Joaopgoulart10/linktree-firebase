@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*utilizado o npm install react-icons */
+
+body{
+    min-height: 100vh; /* Altura da tela do usuario */
+    background: linear-gradient(#232630, #050507); /* irá alterar entre essas duas cores */
+     
+}

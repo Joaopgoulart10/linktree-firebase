@@ -1,3 +1,6 @@
+import { Social } from '../../components/social'
+
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp} from 'react-icons/fa'
 
 export function Home(){
     return(
@@ -15,7 +18,23 @@ export function Home(){
                     </a>
                 </section>
 
-                <footer className="flex justify-center gap-3 my-4"></footer>
+                <footer className="flex justify-center gap-3 my-4">
+                    <Social url="https://www.instagram.com/joaopgoulart/?hl=en">
+                        <FaInstagram size={35} color="#FFF" />
+                    </Social>
+
+                    <Social url="https://www.linkedin.com/in/joao-paulo-goulart-matos/">
+                        <FaLinkedin size={35} color="#FFF" />
+                    </Social>
+
+                    <Social url="https://wa.me/5548988088387?text=">
+                        <FaWhatsapp size={35} color="#FFF" />
+                    </Social>
+
+                    <Social url="https://github.com/Joaopgoulart10">
+                        <FaGithub size={35} color="#FFF" />
+                    </Social>
+                </footer>
             </main>
         </div>
     )

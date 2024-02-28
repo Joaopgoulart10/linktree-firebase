@@ -1,21 +1,22 @@
-
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth"; 
+import { getAuth } from "firebase/auth";
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCuBYRWEngVOoUET6KXSj4w1yVKBRFbsuY",
-  authDomain: "reactlinktree-9a8ad.firebaseapp.com",
-  projectId: "reactlinktree-9a8ad",
-  storageBucket: "reactlinktree-9a8ad.appspot.com",
-  messagingSenderId: "1089894893168",
-  appId: "1:1089894893168:web:4209fa2294c6909ce1d6b5"
+  apiKey: "AIzaSyD0G9gB6Ufmq_wQah95Q-EuV7e4gAhtQTw",
+  authDomain: "linktree-react-64143.firebaseapp.com",
+  projectId: "linktree-react-64143",
+  storageBucket: "linktree-react-64143.appspot.com",
+  messagingSenderId: "990132119713",
+  appId: "1:990132119713:web:9a71a2bf7c3883fbc7a8e0"
 };
 
-
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-//exportando o auth e o db, deixamos qualquer arquivo utilizar eles, parte de auteticacao e db
-export {auth, db};
+export { auth, db};

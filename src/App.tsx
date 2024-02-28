@@ -5,6 +5,7 @@ import { Admin } from './pages/admin'
 import { Login } from './pages/login'
 import { Social } from './pages/social'
 
+import { Private } from './routes/Private'
 
 //renderizando os caminhos de rotas
 const router = createBrowserRouter([
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path:'/Admin',
-    element: <Admin/>
+    element: <Private><Admin/></Private>
   },
   {
     path:'/Login',
